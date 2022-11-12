@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/destination.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/navigationpanel.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="http://fonts.cdnfonts.com/css/barlow-condensed" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/bellefair" rel="stylesheet"> 
+    <link href="http://fonts.cdnfonts.com/css/barlow" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <Nav>
+        <div class="navbar navbar1">
+          <ul>
+            <li> <a href="./index.html"><span class="nav-num">00</span>Home</a></li>
+            <li><a href="./crew.html"><span class="nav-num">01</span>Crew</a></li>
+            <li><a href="./destination.html"><span class="nav-num">02</span>Destination</a></li>
+            <li><a href="./technology.html"><span class="nav-num">03</span>Technology</a></li>
+          </ul>
+        </div>
+      </Nav>
+        
+      <div class="sidebar-block">
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+          <ul>
+            <li> <a href="./index.html"><span class="nav-num">00</span>Home</a></li>
+            <li><a href="./crew.html"><span class="nav-num">01</span>Crew</a></li>
+            <li><a href="./destination.html"><span class="nav-num">02</span>Destination</a></li>
+            <li><a href="./technology.html"><span class="nav-num">03</span>Technology</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="container dest-body wrapper">
+        <h3 class="name-tab"><span class="num-tab">02</span>Pick your destination</h3>
+        
+    <div class="show " id="tab-moon">
+        <div class=" grid m-0 ">
+            <div class="left m-0">                
+                <img  src="images/destination/image-moon.png" alt="">            
+            </div>
+            <div class="tab-planet right m-0">
+                <ul class="tab-planet-menu">
+                    <li class="tab-list"><a href="#/" onclick="openTab(event, 'tab-moon')"  id="defaultOp">Moon</a></li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-mars')">Mars</a> </li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-europa')">Europa</a> </li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-titan')">Titan</a> </li>
+                </ul>
+                <h1 class="title">Moon</h1>
+                <p class="dest-info">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <div class="planet-info m-0 row">
+                    <div class="distance m-0">
+                        <h4 class="title-info">AVG. DISTANCE</h4>
+                        <h3 class="num-info">384,400 km</h3>
+                    </div>
+                    <div class="time m-0 ">
+                        <h4 class="title-info">Est. travel time</h4>
+                        <h3 class="num-info">3 days</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show " id="tab-mars">
+        <div class=" grid m-0">
+            <div class="left m-0">
+                <img  src="images/destination/image-mars.png" alt="">            
+            </div>
+            <div class="tab-planet right m-0">
+                <ul class="tab-planet-menu">
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-moon')"  id="defaultOp">Moon</a></li>
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-mars')">Mars</a> </li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-europa')">Europa</a> </li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-titan')">Titan</a> </li>
+                </ul>
+                <h1 class="title">Mars</h1>
+                <p class="dest-info">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                <div class="planet-info m-0 row">
+                    <div class="distance m-0">
+                        <h4 class="title-info">AVG. DISTANCE</h4>
+                        <h3 class="num-info">225 MIL. km</h3>
+                    </div>
+                    <div class="time m-0 ">
+                        <h4 class="title-info">Est. travel time</h4>
+                        <h3 class="num-info">9 months</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show picked " id="tab-europa">
+        <div class=" grid m-0 destination-picked">
+            <div class="left m-0">
+                <img  src="images/destination/image-europa.png" alt="">            
+            </div>
+            <div class="tab-planet right m-0">
+                <ul class="tab-planet-menu">
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-moon')"  id="defaultOp">Moon</a></li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-mars')">Mars</a> </li>
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-europa')">Europa</a> </li>
+                    <li class="tab-list"><a  onclick="openTab(event, 'tab-titan')">Titan</a> </li>
+                </ul>
+                <h1 class="title">EUROPA</h1>
+                <p class="dest-info">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                <div class="planet-info m-0 row">
+                    <div class="distance m-0">
+                        <h4 class="title-info">AVG. DISTANCE</h4>
+                        <h3 class="num-info">628 MIL. km</h3>
+                    </div>
+                    <div class="time m-0 ">
+                        <h4 class="title-info">Est. travel time</h4>
+                        <h3 class="num-info">3 years</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="show " id="tab-titan">
+        <div class=" grid m-0">
+            <div class="left m-0">
+                <img  src="images/destination/image-titan.png" alt="">            
+            </div>
+            <div class="tab-planet right m-0">
+                <ul class="tab-planet-menu">
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-moon')"  id="defaultOp">Moon</a></li>
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-mars')">Mars</a> </li>
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-europa')">Europa</a> </li>
+                    <li class="tab-list"><a onclick="openTab(event, 'tab-titan')">Titan</a> </li>
+                </ul>
+                <h1 class="title">TITAN</h1>
+                <p class="dest-info">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+                <div class="planet-info m-0 row">
+                    <div class="distance m-0">
+                        <h4 class="title-info">AVG. DISTANCE</h4>
+                        <h3 class="num-info">1.6 BIL. km</h3>
+                    </div>
+                    <div class="time m-0 ">
+                        <h4 class="title-info">Est. travel time</h4>
+                        <h3 class="num-info">7 years</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+    <script src="js/destination.js"></script>
+    <script>
+        document.getElementById("defaultOp").click(function(e){
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

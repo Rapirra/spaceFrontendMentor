@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('http://fonts.cdnfonts.com/css/bellefair');
+@import url('http://fonts.cdnfonts.com/css/barlow');
+body{
+    background: #000 center/cover url("../images/home/background-home-desktop.jpg") no-repeat;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.mb-t{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.homepage-container {    
+    width: 1130px;  
+    margin: 0 auto;
+}
+
+.homepage-block-left{
+    width: 445px;
+    margin: 0;
+}
+.homepage-block-right{
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+    width: fit-content;
+}
+.homepage-block-left h1{   
+    font-family: "Bellefair";
+    font-weight: 400;
+    color: #fff;
+    font-size: 150px;
+    line-height: 172px;  
+    text-transform: uppercase;
+    margin: 24px auto;  
+}
+.homepage-block-left h2{
+    font-family: 'Barlow Condensed';
+    font-style: none;
+    font-weight: 400;
+    color: #D0D6F9;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+    
+}
+.homepage-block-left p{
+    font-family: 'Barlow',sans-serif;
+    font-weight: 400;
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 32px;
+}
+.homepage-block-right button{
+    width: 274px;
+    height: 274px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0B0D17;
+    font-family: "Bellefair";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    body{
+        background: #000 center/cover url('../images/home/background-home-mobile.jpg') no-repeat;
+    }
+    .homepage-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 48px;
+    }
+    .homepage-block-flex .mb-t{
+        margin: 0 auto;
+    }    
+    .homepage-block-flex{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 48px;
+        padding: 0 24px;
+    }
+    .homepage-block-left{
+        width: 100%;
+        margin-bottom: 81px;
+    }
+    .homepage-block-left h1{
+        margin: 16px auto;
+        font-size: 80px;
+        line-height: 100px;
+    }
+    .homepage-block-left h2{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.7px;
+    }
+    .homepage-block-left p{        
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .homepage-block-right button{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 1.25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    body{
+        background: #000 center/cover url('../images/home/background-home-tablet.jpg') no-repeat;
+    }
+    .homepage-container{
+        width: 100%;
+        text-align: center;
+    }
+    .mb-t{
+        margin: 0 auto;
+    }
+    .homepage-block-flex{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 48px;
+    }
+    .homepage-block-left h1{
+        margin: 16px auto;
+    }
+    .homepage-block-right{
+        margin-top: 156px;
+    }
+}

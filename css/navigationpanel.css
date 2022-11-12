@@ -1,0 +1,116 @@
+*{
+   box-sizing: border-box;
+}
+@import url('http://fonts.cdnfonts.com/css/barlow-condensed');
+@import url('http://fonts.cdnfonts.com/css/bellefair');
+@import url('http://fonts.cdnfonts.com/css/barlow');
+Nav{
+    position: relative;
+    margin: 0 auto;
+}
+Nav::before{
+    content: "";
+    background-image: url('../images/shared/logo.svg');
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+.navbar{
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    width: 60%;
+    padding: 0px 123px;
+    padding-top: 39px;
+    margin: 0 auto;
+    margin-right: 0;
+}
+.navbar ul{
+    justify-content: space-between;
+}
+.navbar ul li {
+    margin-right: 35px;
+}
+.navbar::before{
+    position: absolute;
+    right: 95%;
+    top: 50px;
+    content: "";
+    background-image: url('./Rectangle.png');
+    width: 473px;
+    height: 2px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 39px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:#FFFFFF;
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+.navbar ul li:hover {
+    border-color: #fff;
+}
+.navbar ul li{
+  border-bottom: 2px solid transparent;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 auto;
+}
+.nav-num{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar::before{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    Nav::before{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .navbar::before{
+        display: none;
+    }
+    .navbar{
+        width: 57%;
+        padding: 0 48px;
+        padding-top: 39px;
+    }
+    .navbar ul li span{
+        display: none;
+    }
+    .navbar ul li a{
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+        line-height: 17px;
+    }
+}
